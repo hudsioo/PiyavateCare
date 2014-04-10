@@ -21,6 +21,13 @@
 		9FCEBBE818E48A2E00D868E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEBBCA18E48A2E00D868E0 /* UIKit.framework */; };
 		9FCEBBF018E48A2E00D868E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEBBEE18E48A2E00D868E0 /* InfoPlist.strings */; };
 		9FCEBBF218E48A2E00D868E0 /* Piyavate_CareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEBBF118E48A2E00D868E0 /* Piyavate_CareTests.m */; };
+		9FCEBBFC18E48CDA00D868E0 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEBBFB18E48CDA00D868E0 /* bg.png */; };
+		9FCEBBFE18E499FF00D868E0 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FCEBBFD18E499FF00D868E0 /* bg@2x.png */; };
+		9FE0469318E9212A00AB2A40 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE0469118E9212A00AB2A40 /* SVProgressHUD.m */; };
+		9FE0469418E9212A00AB2A40 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9FE0469218E9212A00AB2A40 /* SVProgressHUD.bundle */; };
+		9FE0469718E921D300AB2A40 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE0469618E921D300AB2A40 /* QuartzCore.framework */; };
+		9FE0469D18E9F9B700AB2A40 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE0469B18E9F9B700AB2A40 /* SignupViewController.m */; };
+		9FE0469E18E9F9B700AB2A40 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FE0469C18E9F9B700AB2A40 /* SignupViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,15 @@
 		9FCEBBED18E48A2E00D868E0 /* Piyavate CareTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Piyavate CareTests-Info.plist"; sourceTree = "<group>"; };
 		9FCEBBEF18E48A2E00D868E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9FCEBBF118E48A2E00D868E0 /* Piyavate_CareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Piyavate_CareTests.m; sourceTree = "<group>"; };
+		9FCEBBFB18E48CDA00D868E0 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		9FCEBBFD18E499FF00D868E0 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		9FE0469018E9212A00AB2A40 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		9FE0469118E9212A00AB2A40 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		9FE0469218E9212A00AB2A40 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		9FE0469618E921D300AB2A40 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9FE0469A18E9F9B700AB2A40 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		9FE0469B18E9F9B700AB2A40 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		9FE0469C18E9F9B700AB2A40 /* SignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE0469718E921D300AB2A40 /* QuartzCore.framework in Frameworks */,
 				9FCEBBC918E48A2E00D868E0 /* CoreGraphics.framework in Frameworks */,
 				9FCEBBCB18E48A2E00D868E0 /* UIKit.framework in Frameworks */,
 				9FCEBBC718E48A2E00D868E0 /* Foundation.framework in Frameworks */,
@@ -101,6 +118,7 @@
 		9FCEBBC518E48A2E00D868E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FE0469618E921D300AB2A40 /* QuartzCore.framework */,
 				9FCEBBC618E48A2E00D868E0 /* Foundation.framework */,
 				9FCEBBC818E48A2E00D868E0 /* CoreGraphics.framework */,
 				9FCEBBCA18E48A2E00D868E0 /* UIKit.framework */,
@@ -112,11 +130,13 @@
 		9FCEBBCC18E48A2E00D868E0 /* Piyavate Care */ = {
 			isa = PBXGroup;
 			children = (
+				9FE0469518E9212D00AB2A40 /* SVProgressHUD */,
 				9FCEBBD518E48A2E00D868E0 /* AppDelegate.h */,
 				9FCEBBD618E48A2E00D868E0 /* AppDelegate.m */,
 				9FCEBBD818E48A2E00D868E0 /* Main.storyboard */,
-				9FCEBBDB18E48A2E00D868E0 /* ViewController.h */,
-				9FCEBBDC18E48A2E00D868E0 /* ViewController.m */,
+				9FE0469F18E9F9CB00AB2A40 /* SignUp */,
+				9FE0469918E9223C00AB2A40 /* SignIn */,
+				9FE0469818E9223000AB2A40 /* Resources */,
 				9FCEBBDE18E48A2E00D868E0 /* Images.xcassets */,
 				9FCEBBCD18E48A2E00D868E0 /* Supporting Files */,
 			);
@@ -150,6 +170,44 @@
 				9FCEBBEE18E48A2E00D868E0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FE0469518E9212D00AB2A40 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				9FE0469018E9212A00AB2A40 /* SVProgressHUD.h */,
+				9FE0469118E9212A00AB2A40 /* SVProgressHUD.m */,
+				9FE0469218E9212A00AB2A40 /* SVProgressHUD.bundle */,
+			);
+			name = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		9FE0469818E9223000AB2A40 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9FCEBBFB18E48CDA00D868E0 /* bg.png */,
+				9FCEBBFD18E499FF00D868E0 /* bg@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9FE0469918E9223C00AB2A40 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				9FCEBBDB18E48A2E00D868E0 /* ViewController.h */,
+				9FCEBBDC18E48A2E00D868E0 /* ViewController.m */,
+			);
+			name = SignIn;
+			sourceTree = "<group>";
+		};
+		9FE0469F18E9F9CB00AB2A40 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				9FE0469A18E9F9B700AB2A40 /* SignupViewController.h */,
+				9FE0469B18E9F9B700AB2A40 /* SignupViewController.m */,
+				9FE0469C18E9F9B700AB2A40 /* SignupViewController.xib */,
+			);
+			name = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +287,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FCEBBDF18E48A2E00D868E0 /* Images.xcassets in Resources */,
+				9FE0469418E9212A00AB2A40 /* SVProgressHUD.bundle in Resources */,
 				9FCEBBD118E48A2E00D868E0 /* InfoPlist.strings in Resources */,
+				9FCEBBFC18E48CDA00D868E0 /* bg.png in Resources */,
 				9FCEBBDA18E48A2E00D868E0 /* Main.storyboard in Resources */,
+				9FE0469E18E9F9B700AB2A40 /* SignupViewController.xib in Resources */,
+				9FCEBBFE18E499FF00D868E0 /* bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +312,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FCEBBDD18E48A2E00D868E0 /* ViewController.m in Sources */,
+				9FE0469318E9212A00AB2A40 /* SVProgressHUD.m in Sources */,
 				9FCEBBD718E48A2E00D868E0 /* AppDelegate.m in Sources */,
 				9FCEBBD318E48A2E00D868E0 /* main.m in Sources */,
+				9FE0469D18E9F9B700AB2A40 /* SignupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +520,7 @@
 				9FCEBBF718E48A2E00D868E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FCEBBF818E48A2E00D868E0 /* Build configuration list for PBXNativeTarget "Piyavate CareTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +529,7 @@
 				9FCEBBFA18E48A2E00D868E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
