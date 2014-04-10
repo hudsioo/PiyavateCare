@@ -7,12 +7,18 @@
 //
 
 #import "AppDelegate.h"
-
+#import "HomeViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+ //   if (ถ้า Login แล้ว) {
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        HomeViewController * homeVC = [[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
+        self.window.rootViewController = homeVC;
+   // }
+    
     return YES;
 }
 							
