@@ -46,6 +46,12 @@
 		9FE0469718E921D300AB2A40 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE0469618E921D300AB2A40 /* QuartzCore.framework */; };
 		9FE0469D18E9F9B700AB2A40 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE0469B18E9F9B700AB2A40 /* SignupViewController.m */; };
 		9FE0469E18E9F9B700AB2A40 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FE0469C18E9F9B700AB2A40 /* SignupViewController.xib */; };
+		9FFD607A18F795DB00F5C671 /* AskDoctorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD607818F795DB00F5C671 /* AskDoctorViewController.m */; };
+		9FFD607B18F795DB00F5C671 /* AskDoctorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD607918F795DB00F5C671 /* AskDoctorViewController.xib */; };
+		9FFD607F18F79A6600F5C671 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD607D18F79A6600F5C671 /* WebViewController.m */; };
+		9FFD608018F79A6600F5C671 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD607E18F79A6600F5C671 /* WebViewController.xib */; };
+		9FFD608218F7A0BA00F5C671 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFD608118F7A0BA00F5C671 /* CoreLocation.framework */; };
+		9FFD608418F7A58200F5C671 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFD608318F7A58200F5C671 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +112,14 @@
 		9FE0469A18E9F9B700AB2A40 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
 		9FE0469B18E9F9B700AB2A40 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
 		9FE0469C18E9F9B700AB2A40 /* SignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
+		9FFD607718F795DB00F5C671 /* AskDoctorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AskDoctorViewController.h; sourceTree = "<group>"; };
+		9FFD607818F795DB00F5C671 /* AskDoctorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskDoctorViewController.m; sourceTree = "<group>"; };
+		9FFD607918F795DB00F5C671 /* AskDoctorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AskDoctorViewController.xib; sourceTree = "<group>"; };
+		9FFD607C18F79A6600F5C671 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		9FFD607D18F79A6600F5C671 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		9FFD607E18F79A6600F5C671 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		9FFD608118F7A0BA00F5C671 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9FFD608318F7A58200F5C671 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +127,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FFD608418F7A58200F5C671 /* AudioToolbox.framework in Frameworks */,
+				9FFD608218F7A0BA00F5C671 /* CoreLocation.framework in Frameworks */,
 				9FE0469718E921D300AB2A40 /* QuartzCore.framework in Frameworks */,
 				9FCEBBC918E48A2E00D868E0 /* CoreGraphics.framework in Frameworks */,
 				9FCEBBCB18E48A2E00D868E0 /* UIKit.framework in Frameworks */,
@@ -139,6 +155,12 @@
 				9F16212318F6CCA3002512AF /* HomeViewController.h */,
 				9F16212418F6CCA3002512AF /* HomeViewController.m */,
 				9F16212518F6CCA3002512AF /* HomeViewController.xib */,
+				9FFD607718F795DB00F5C671 /* AskDoctorViewController.h */,
+				9FFD607818F795DB00F5C671 /* AskDoctorViewController.m */,
+				9FFD607918F795DB00F5C671 /* AskDoctorViewController.xib */,
+				9FFD607C18F79A6600F5C671 /* WebViewController.h */,
+				9FFD607D18F79A6600F5C671 /* WebViewController.m */,
+				9FFD607E18F79A6600F5C671 /* WebViewController.xib */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -165,6 +187,8 @@
 		9FCEBBC518E48A2E00D868E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FFD608318F7A58200F5C671 /* AudioToolbox.framework */,
+				9FFD608118F7A0BA00F5C671 /* CoreLocation.framework */,
 				9FE0469618E921D300AB2A40 /* QuartzCore.framework */,
 				9FCEBBC618E48A2E00D868E0 /* Foundation.framework */,
 				9FCEBBC818E48A2E00D868E0 /* CoreGraphics.framework */,
@@ -353,6 +377,7 @@
 				9FCEBBDF18E48A2E00D868E0 /* Images.xcassets in Resources */,
 				9F16213A18F6CD68002512AF /* background.png in Resources */,
 				9F16213918F6CD68002512AF /* background_pink.png in Resources */,
+				9FFD608018F79A6600F5C671 /* WebViewController.xib in Resources */,
 				9FE0469418E9212A00AB2A40 /* SVProgressHUD.bundle in Resources */,
 				9F16213B18F6CD68002512AF /* default.png in Resources */,
 				9F16214518F6CD68002512AF /* icon9.png in Resources */,
@@ -367,6 +392,7 @@
 				9F16214718F6CD68002512AF /* icon11.png in Resources */,
 				9FE0469E18E9F9B700AB2A40 /* SignupViewController.xib in Resources */,
 				9F16214318F6CD68002512AF /* icon7.png in Resources */,
+				9FFD607B18F795DB00F5C671 /* AskDoctorViewController.xib in Resources */,
 				9F16214818F6CD68002512AF /* icon12.png in Resources */,
 				9FCEBBFE18E499FF00D868E0 /* bg@2x.png in Resources */,
 				9F16212718F6CCA3002512AF /* HomeViewController.xib in Resources */,
@@ -393,7 +419,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FCEBBDD18E48A2E00D868E0 /* ViewController.m in Sources */,
+				9FFD607A18F795DB00F5C671 /* AskDoctorViewController.m in Sources */,
 				9FE0469318E9212A00AB2A40 /* SVProgressHUD.m in Sources */,
+				9FFD607F18F79A6600F5C671 /* WebViewController.m in Sources */,
 				9FCEBBD718E48A2E00D868E0 /* AppDelegate.m in Sources */,
 				9FCEBBD318E48A2E00D868E0 /* main.m in Sources */,
 				9FE0469D18E9F9B700AB2A40 /* SignupViewController.m in Sources */,
