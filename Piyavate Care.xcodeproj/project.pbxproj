@@ -25,6 +25,11 @@
 		9F16214618F6CD68002512AF /* icon10.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F16213618F6CD68002512AF /* icon10.png */; };
 		9F16214718F6CD68002512AF /* icon11.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F16213718F6CD68002512AF /* icon11.png */; };
 		9F16214818F6CD68002512AF /* icon12.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F16213818F6CD68002512AF /* icon12.png */; };
+		9FBD68FC1900E48900C9CFD5 /* HealthCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD68FA1900E48900C9CFD5 /* HealthCheckViewController.m */; };
+		9FBD68FD1900E48900C9CFD5 /* HealthCheckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FBD68FB1900E48900C9CFD5 /* HealthCheckViewController.xib */; };
+		9FBD69001900E54200C9CFD5 /* BMIicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FBD68FF1900E54200C9CFD5 /* BMIicon.png */; };
+		9FBD69041900E5E900C9CFD5 /* BMICalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD69021900E5E900C9CFD5 /* BMICalculatorViewController.m */; };
+		9FBD69051900E5E900C9CFD5 /* BMICalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FBD69031900E5E900C9CFD5 /* BMICalculatorViewController.xib */; };
 		9FCEBBC718E48A2E00D868E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEBBC618E48A2E00D868E0 /* Foundation.framework */; };
 		9FCEBBC918E48A2E00D868E0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEBBC818E48A2E00D868E0 /* CoreGraphics.framework */; };
 		9FCEBBCB18E48A2E00D868E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEBBCA18E48A2E00D868E0 /* UIKit.framework */; };
@@ -84,6 +89,13 @@
 		9F16213618F6CD68002512AF /* icon10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon10.png; sourceTree = "<group>"; };
 		9F16213718F6CD68002512AF /* icon11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon11.png; sourceTree = "<group>"; };
 		9F16213818F6CD68002512AF /* icon12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon12.png; sourceTree = "<group>"; };
+		9FBD68F91900E48900C9CFD5 /* HealthCheckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthCheckViewController.h; sourceTree = "<group>"; };
+		9FBD68FA1900E48900C9CFD5 /* HealthCheckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthCheckViewController.m; sourceTree = "<group>"; };
+		9FBD68FB1900E48900C9CFD5 /* HealthCheckViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HealthCheckViewController.xib; sourceTree = "<group>"; };
+		9FBD68FF1900E54200C9CFD5 /* BMIicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BMIicon.png; sourceTree = "<group>"; };
+		9FBD69011900E5E900C9CFD5 /* BMICalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMICalculatorViewController.h; sourceTree = "<group>"; };
+		9FBD69021900E5E900C9CFD5 /* BMICalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMICalculatorViewController.m; sourceTree = "<group>"; };
+		9FBD69031900E5E900C9CFD5 /* BMICalculatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMICalculatorViewController.xib; sourceTree = "<group>"; };
 		9FCEBBC318E48A2E00D868E0 /* Piyavate Care.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Piyavate Care.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCEBBC618E48A2E00D868E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9FCEBBC818E48A2E00D868E0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -155,14 +167,45 @@
 				9F16212318F6CCA3002512AF /* HomeViewController.h */,
 				9F16212418F6CCA3002512AF /* HomeViewController.m */,
 				9F16212518F6CCA3002512AF /* HomeViewController.xib */,
+				9FBD68FE1900E48D00C9CFD5 /* HealthCheck */,
+				9FBD68F71900E43B00C9CFD5 /* AskDoc */,
+				9FBD68F81900E44500C9CFD5 /* WebView */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		9FBD68F71900E43B00C9CFD5 /* AskDoc */ = {
+			isa = PBXGroup;
+			children = (
 				9FFD607718F795DB00F5C671 /* AskDoctorViewController.h */,
 				9FFD607818F795DB00F5C671 /* AskDoctorViewController.m */,
 				9FFD607918F795DB00F5C671 /* AskDoctorViewController.xib */,
+			);
+			name = AskDoc;
+			sourceTree = "<group>";
+		};
+		9FBD68F81900E44500C9CFD5 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
 				9FFD607C18F79A6600F5C671 /* WebViewController.h */,
 				9FFD607D18F79A6600F5C671 /* WebViewController.m */,
 				9FFD607E18F79A6600F5C671 /* WebViewController.xib */,
 			);
-			name = Home;
+			name = WebView;
+			sourceTree = "<group>";
+		};
+		9FBD68FE1900E48D00C9CFD5 /* HealthCheck */ = {
+			isa = PBXGroup;
+			children = (
+				9FBD68FF1900E54200C9CFD5 /* BMIicon.png */,
+				9FBD68F91900E48900C9CFD5 /* HealthCheckViewController.h */,
+				9FBD68FA1900E48900C9CFD5 /* HealthCheckViewController.m */,
+				9FBD68FB1900E48900C9CFD5 /* HealthCheckViewController.xib */,
+				9FBD69011900E5E900C9CFD5 /* BMICalculatorViewController.h */,
+				9FBD69021900E5E900C9CFD5 /* BMICalculatorViewController.m */,
+				9FBD69031900E5E900C9CFD5 /* BMICalculatorViewController.xib */,
+			);
+			name = HealthCheck;
 			sourceTree = "<group>";
 		};
 		9FCEBBBA18E48A2E00D868E0 = {
@@ -381,6 +424,7 @@
 				9FE0469418E9212A00AB2A40 /* SVProgressHUD.bundle in Resources */,
 				9F16213B18F6CD68002512AF /* default.png in Resources */,
 				9F16214518F6CD68002512AF /* icon9.png in Resources */,
+				9FBD69001900E54200C9CFD5 /* BMIicon.png in Resources */,
 				9F16213E18F6CD68002512AF /* icon2.png in Resources */,
 				9FCEBBD118E48A2E00D868E0 /* InfoPlist.strings in Resources */,
 				9FCEBBFC18E48CDA00D868E0 /* bg.png in Resources */,
@@ -390,10 +434,12 @@
 				9F16214018F6CD68002512AF /* icon4.png in Resources */,
 				9FCEBBDA18E48A2E00D868E0 /* Main.storyboard in Resources */,
 				9F16214718F6CD68002512AF /* icon11.png in Resources */,
+				9FBD68FD1900E48900C9CFD5 /* HealthCheckViewController.xib in Resources */,
 				9FE0469E18E9F9B700AB2A40 /* SignupViewController.xib in Resources */,
 				9F16214318F6CD68002512AF /* icon7.png in Resources */,
 				9FFD607B18F795DB00F5C671 /* AskDoctorViewController.xib in Resources */,
 				9F16214818F6CD68002512AF /* icon12.png in Resources */,
+				9FBD69051900E5E900C9CFD5 /* BMICalculatorViewController.xib in Resources */,
 				9FCEBBFE18E499FF00D868E0 /* bg@2x.png in Resources */,
 				9F16212718F6CCA3002512AF /* HomeViewController.xib in Resources */,
 				9F16213D18F6CD68002512AF /* icon1.png in Resources */,
@@ -420,8 +466,10 @@
 			files = (
 				9FCEBBDD18E48A2E00D868E0 /* ViewController.m in Sources */,
 				9FFD607A18F795DB00F5C671 /* AskDoctorViewController.m in Sources */,
+				9FBD68FC1900E48900C9CFD5 /* HealthCheckViewController.m in Sources */,
 				9FE0469318E9212A00AB2A40 /* SVProgressHUD.m in Sources */,
 				9FFD607F18F79A6600F5C671 /* WebViewController.m in Sources */,
+				9FBD69041900E5E900C9CFD5 /* BMICalculatorViewController.m in Sources */,
 				9FCEBBD718E48A2E00D868E0 /* AppDelegate.m in Sources */,
 				9FCEBBD318E48A2E00D868E0 /* main.m in Sources */,
 				9FE0469D18E9F9B700AB2A40 /* SignupViewController.m in Sources */,
