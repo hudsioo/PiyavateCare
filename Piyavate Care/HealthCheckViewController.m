@@ -1,18 +1,18 @@
 //
-//  AskDoctorViewController.m
+//  HealthCheckViewController.m
 //  Piyavate Care
 //
-//  Created by hudsioo on 4/11/2557 BE.
+//  Created by hudsioo on 4/18/2557 BE.
 //  Copyright (c) 2557 QOOFHOUSE. All rights reserved.
 //
 
-#import "AskDoctorViewController.h"
-
-@interface AskDoctorViewController ()
+#import "HealthCheckViewController.h"
+#import "BMICalculatorViewController.h"
+@interface HealthCheckViewController ()
 
 @end
 
-@implementation AskDoctorViewController
+@implementation HealthCheckViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +33,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)openBMICheck:(id)sender {
+    BMICalculatorViewController * bmiVC = [[BMICalculatorViewController alloc] initWithNibName:@"BMICalculatorViewController" bundle:nil];
+    bmiVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:bmiVC animated:YES completion:nil];
 }
 
 - (IBAction)closeView:(id)sender {

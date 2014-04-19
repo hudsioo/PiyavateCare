@@ -10,6 +10,7 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import "AskDoctorViewController.h"
 #import "WebViewController.h"
+#import "HealthCheckViewController.h"
 @interface HomeViewController ()
 
 @end
@@ -56,6 +57,8 @@
 }
 
 - (IBAction)openHealthCheck:(id)sender {
+    HealthCheckViewController * healthVC = [[HealthCheckViewController alloc] initWithNibName:@"HealthCheckViewController" bundle:nil];
+    [self presentViewController:healthVC animated:YES completion:nil];
 }
 
 - (IBAction)openWorkingCare:(id)sender {

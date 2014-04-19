@@ -10,4 +10,5 @@
 
 @interface AskDoctorViewController : UIViewController
 
+- (IBAction)closeView:(id)sender;
 @end
