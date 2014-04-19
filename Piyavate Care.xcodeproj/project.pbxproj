@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22CA74E21902502900D9DC0D /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CA74E11902502900D9DC0D /* ForgotPasswordViewController.m */; };
 		9F16212618F6CCA3002512AF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F16212418F6CCA3002512AF /* HomeViewController.m */; };
 		9F16212718F6CCA3002512AF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F16212518F6CCA3002512AF /* HomeViewController.xib */; };
 		9F16213918F6CD68002512AF /* background_pink.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F16212918F6CD68002512AF /* background_pink.png */; };
@@ -45,7 +46,6 @@
 		9FE0469418E9212A00AB2A40 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9FE0469218E9212A00AB2A40 /* SVProgressHUD.bundle */; };
 		9FE0469718E921D300AB2A40 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE0469618E921D300AB2A40 /* QuartzCore.framework */; };
 		9FE0469D18E9F9B700AB2A40 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE0469B18E9F9B700AB2A40 /* SignupViewController.m */; };
-		9FE0469E18E9F9B700AB2A40 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FE0469C18E9F9B700AB2A40 /* SignupViewController.xib */; };
 		9FFD607A18F795DB00F5C671 /* AskDoctorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD607818F795DB00F5C671 /* AskDoctorViewController.m */; };
 		9FFD607B18F795DB00F5C671 /* AskDoctorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD607918F795DB00F5C671 /* AskDoctorViewController.xib */; };
 		9FFD607F18F79A6600F5C671 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD607D18F79A6600F5C671 /* WebViewController.m */; };
@@ -65,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22CA74E01902502900D9DC0D /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
+		22CA74E11902502900D9DC0D /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
 		9F16212318F6CCA3002512AF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		9F16212418F6CCA3002512AF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		9F16212518F6CCA3002512AF /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -111,7 +113,6 @@
 		9FE0469618E921D300AB2A40 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9FE0469A18E9F9B700AB2A40 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
 		9FE0469B18E9F9B700AB2A40 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
-		9FE0469C18E9F9B700AB2A40 /* SignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
 		9FFD607718F795DB00F5C671 /* AskDoctorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AskDoctorViewController.h; sourceTree = "<group>"; };
 		9FFD607818F795DB00F5C671 /* AskDoctorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskDoctorViewController.m; sourceTree = "<group>"; };
 		9FFD607918F795DB00F5C671 /* AskDoctorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AskDoctorViewController.xib; sourceTree = "<group>"; };
@@ -149,6 +150,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22CA74DF19024FFE00D9DC0D /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				22CA74E01902502900D9DC0D /* ForgotPasswordViewController.h */,
+				22CA74E11902502900D9DC0D /* ForgotPasswordViewController.m */,
+			);
+			name = ForgotPassword;
+			sourceTree = "<group>";
+		};
 		9F16212818F6CCA6002512AF /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,8 +215,9 @@
 				9FCEBBD518E48A2E00D868E0 /* AppDelegate.h */,
 				9FCEBBD618E48A2E00D868E0 /* AppDelegate.m */,
 				9FCEBBD818E48A2E00D868E0 /* Main.storyboard */,
-				9FE0469F18E9F9CB00AB2A40 /* SignUp */,
 				9FE0469918E9223C00AB2A40 /* SignIn */,
+				22CA74DF19024FFE00D9DC0D /* ForgotPassword */,
+				9FE0469F18E9F9CB00AB2A40 /* SignUp */,
 				9F16212818F6CCA6002512AF /* Home */,
 				9FE0469818E9223000AB2A40 /* Resources */,
 				9FCEBBDE18E48A2E00D868E0 /* Images.xcassets */,
@@ -293,7 +304,6 @@
 			children = (
 				9FE0469A18E9F9B700AB2A40 /* SignupViewController.h */,
 				9FE0469B18E9F9B700AB2A40 /* SignupViewController.m */,
-				9FE0469C18E9F9B700AB2A40 /* SignupViewController.xib */,
 			);
 			name = SignUp;
 			sourceTree = "<group>";
@@ -390,7 +400,6 @@
 				9F16214018F6CD68002512AF /* icon4.png in Resources */,
 				9FCEBBDA18E48A2E00D868E0 /* Main.storyboard in Resources */,
 				9F16214718F6CD68002512AF /* icon11.png in Resources */,
-				9FE0469E18E9F9B700AB2A40 /* SignupViewController.xib in Resources */,
 				9F16214318F6CD68002512AF /* icon7.png in Resources */,
 				9FFD607B18F795DB00F5C671 /* AskDoctorViewController.xib in Resources */,
 				9F16214818F6CD68002512AF /* icon12.png in Resources */,
@@ -424,6 +433,7 @@
 				9FFD607F18F79A6600F5C671 /* WebViewController.m in Sources */,
 				9FCEBBD718E48A2E00D868E0 /* AppDelegate.m in Sources */,
 				9FCEBBD318E48A2E00D868E0 /* main.m in Sources */,
+				22CA74E21902502900D9DC0D /* ForgotPasswordViewController.m in Sources */,
 				9FE0469D18E9F9B700AB2A40 /* SignupViewController.m in Sources */,
 				9F16212618F6CCA3002512AF /* HomeViewController.m in Sources */,
 			);

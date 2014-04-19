@@ -19,11 +19,6 @@
 - (IBAction)loginAction:(id)sender;
 
 //Request Password View
-@property (weak, nonatomic) IBOutlet UITextField *lostUserTF;
-@property (weak, nonatomic) IBOutlet UITextField *lostPhoneTF;
-- (IBAction)requestPasswordAction:(id)sender;
-- (IBAction)cancelAction:(id)sender;
+- (IBAction)forgotPasswordAction:(id)sender;
 
-
-- (IBAction)regiterAction:(id)sender;
 @end

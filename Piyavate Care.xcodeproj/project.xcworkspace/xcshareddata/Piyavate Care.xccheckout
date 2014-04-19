@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>791224E0-A4DD-4B8D-8270-448A8566285A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Piyavate Care</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C59F46E5-EB85-4339-8F22-1E57F5651A66</key>
+		<string>https://github.com/hudsioo/PiyavateCare</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Piyavate Care.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C59F46E5-EB85-4339-8F22-1E57F5651A66</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/hudsioo/PiyavateCare</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C59F46E5-EB85-4339-8F22-1E57F5651A66</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C59F46E5-EB85-4339-8F22-1E57F5651A66</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PiyavateCare</string>
+		</dict>
+	</array>
+</dict>
+</plist>
