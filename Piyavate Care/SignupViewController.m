@@ -87,7 +87,7 @@
                              self.pointHomeTextField.text,
                              coord.latitude,
                              coord.longitude];
-    
+    NSLog(@"URL %@",strRequest);
     NSURL *_url = [NSURL URLWithString:strRequest];
     NSMutableURLRequest *_request = [NSMutableURLRequest requestWithURL:_url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:50];
     NSDictionary *_headers = [NSDictionary dictionaryWithObjectsAndKeys:@"application/json", @"accept", nil];
