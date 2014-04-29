@@ -241,6 +241,7 @@
 				9F3AABD1190F883F0067A357 /* UIImageView+AFNetworking.m */,
 			);
 			name = AFNetworking;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		9FBD68F71900E43B00C9CFD5 /* AskDoc */ = {
@@ -280,7 +281,6 @@
 		9FCEBBBA18E48A2E00D868E0 = {
 			isa = PBXGroup;
 			children = (
-				9F3AABDB190F88440067A357 /* AFNetworking */,
 				9FCEBBCC18E48A2E00D868E0 /* Piyavate Care */,
 				9FCEBBEB18E48A2E00D868E0 /* Piyavate CareTests */,
 				9FCEBBC518E48A2E00D868E0 /* Frameworks */,
@@ -316,6 +316,7 @@
 		9FCEBBCC18E48A2E00D868E0 /* Piyavate Care */ = {
 			isa = PBXGroup;
 			children = (
+				9F3AABDB190F88440067A357 /* AFNetworking */,
 				9FE0469518E9212D00AB2A40 /* SVProgressHUD */,
 				9FCEBBD518E48A2E00D868E0 /* AppDelegate.h */,
 				9FCEBBD618E48A2E00D868E0 /* AppDelegate.m */,
