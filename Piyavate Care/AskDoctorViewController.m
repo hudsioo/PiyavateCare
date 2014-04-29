@@ -7,7 +7,7 @@
 //
 
 #import "AskDoctorViewController.h"
-
+#import "SVProgressHUD.h"
 @interface AskDoctorViewController (){
     NSMutableData * jData;
 }
@@ -24,50 +24,60 @@
     }
     return self;
 }
-- (void)requestWebService{
-    jData = [NSMutableData data];
-    NSString * strRequest = [NSString stringWithFormat:@"http://piyavatecare.com/home/app/postDoctor.php?userID=%@&doctorID=%@&name=%@&email=%@&phone=%@&userID=%@",
-                             @"userID",
-                             @"DoctorID",
-                             self.nameTF.text,
-                             self.emailTF.text,
-                             self.phoneTF.text,
-                             @"userID"
-                             ];
-    //?
-    // แล้ว หัวข้อ กับ รายอะเอียด ส่งตรงไป ............. - -' งง
-    // doctorID เอามาจากไส งง มาก
-    
-    NSURL *_url = [NSURL URLWithString:strRequest];
-    NSMutableURLRequest *_request = [NSMutableURLRequest requestWithURL:_url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:50];
-    NSDictionary *_headers = [NSDictionary dictionaryWithObjectsAndKeys:@"application/json", @"accept", nil];
-    [_request setAllHTTPHeaderFields:_headers];
-    NSURLConnection *theConnection=[[NSURLConnection alloc] initWithRequest:_request delegate:self];
-    if (theConnection) {NSLog(@"ok");} else {NSLog(@"fail");}
-    
-}
 
-#pragma mark - Connection delegate
-- (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
-{
-    [jData appendData:data];
-}
 
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
-    
-}
-
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection{
-    
-    NSMutableDictionary * dic = [NSJSONSerialization JSONObjectWithData:jData options:NSJSONReadingMutableContainers error:nil];
-    NSLog(@"Request Webservice %@",dic);
-    if (dic) {
-        
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 0) {
+        [SVProgressHUD dismiss];
+        [self performSelector:@selector(closeView:) withObject:nil afterDelay:2];
     }
 }
 
+
+- (void)askDocRequest{
+//    userID, doctorID, name, email, phone,
+    NSUserDefaults * UD = [NSUserDefaults standardUserDefaults];
+    NSString * userID = [[UD objectForKey:@"userInfo"] objectForKey:@"userID"];
+    NSString * doctorID = @"";
+    NSString * name = [self.nameTF.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString * email = [self.emailTF.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString * phone = [self.phoneTF.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+
+    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
+                            userID, @"userID",
+                            doctorID, @"doctorID",
+                            name, @"name",
+                            email, @"email",
+                            phone, @"phone",
+                            nil];
+    
+    AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:
+                            [NSURL URLWithString:piyavateURL]];
+    
+    [client postPath:@"postDoctor.php" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSMutableArray * array = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        NSLog(@"Respone %@",array);
+        
+        if ([array[0][@"status"] isEqualToString:@"fail"]) {
+            [SVProgressHUD dismiss];
+            UIAlertView * alertV = [[UIAlertView alloc]initWithTitle:@"เข้าสู่ระบบไม่สำเร็จ" message:@"รหัสผู้ใช้ หรือ รหัสผ่านไม่ถูกต้อง" delegate:self cancelButtonTitle:@"ปิด" otherButtonTitles:nil, nil];
+            [alertV show];
+        }else{
+           
+            UIAlertView * alertV = [[UIAlertView alloc]initWithTitle:@"ระบบได้ทำการบันทึกข้อมูลของคุณแล้ว" message:@"รอการติดต่อกลับ" delegate:self cancelButtonTitle:@"ปิด" otherButtonTitles:nil, nil];
+            [alertV show];
+        }
+        
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", [error localizedDescription]);
+    }];
+}
+
 - (IBAction)sendTopicAction:(id)sender {
-    [self requestWebService];
+    [SVProgressHUD showWithStatus:@"กำลังส่งข้อมูล" maskType:SVProgressHUDMaskTypeGradient];
+
+    [self askDocRequest];
 }
 
 - (void)viewDidLoad

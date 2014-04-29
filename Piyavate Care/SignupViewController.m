@@ -36,7 +36,7 @@
     locationManager.distanceFilter = kCLDistanceFilterNone; // whenever we move
     locationManager.desiredAccuracy = kCLLocationAccuracyBest; // 100 m
     [locationManager startUpdatingLocation];
-
+    
 }
 
 - (void)locationManager:(CLLocationManager *)manager
@@ -48,7 +48,7 @@
     
     coord.longitude = location.coordinate.longitude;
     coord.latitude = location.coordinate.latitude;
-
+    
     
 }
 - (void)viewDidLoad
@@ -60,68 +60,72 @@
 
 - (IBAction)signUpAction:(id)sender {
     [SVProgressHUD showWithStatus:@"กำลังตรวจสอบ" maskType:SVProgressHUDMaskTypeGradient];
-    [self requestSignUp];
+    [self registerRequest];
 }
 
-- (void)requestSignUp{
-    jData = [[NSMutableData alloc] init];
+- (void)registerRequest{
     
-
+    NSString * name     = [self.nameTextField.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString * age      = [self.ageTextField.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString * add      = [self.addressTextField.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString * street   = [self.streetTextFIELD.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString * subDis   = [self.subDistrictTextField.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString * dis      = [self.districtTextField.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString * prov     = [self.provinceTextFiled.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString * post     = [self.postCodeTextField.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString * tel      = [self.telephoneNumberTextField.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString * email    = [self.emailTextField.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString * user     = [self.usernameTextField.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString * pass     = [self.passwordTextField.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString * emerP    = [self.emergencyPersonTextField.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *  emerT   = [self.emergencyPersonNumberPhoneTextField.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString * hear     = [self.hearFromTextField.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *  point   = [self.pointHomeTextField.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *  lati    = [NSString stringWithFormat:@"%f",coord.latitude];
+    NSString *  longti  = [NSString stringWithFormat:@"%f",coord.longitude];
     
-    NSString * strRequest = [NSString stringWithFormat:@"http://piyavatecare.com/home/app/register.php?name=%@&age=%@&address=%@&street=%@&subDistrict=%@&district=%@&province=%@&postCode=%@&phone=%@&email=%@&username=%@&password=%@&emergencyPerson=%@&emergencyPersonNumberPhone=%@&hearFrom=%@&poiHome=%@&latitude=%f&longitude=%f",
-                             self.nameTextField.text,
-                             self.ageTextField.text,
-                             self.addressTextField.text,
-                             self.streetTextFIELD.text,
-                             self.subDistrictTextField.text,
-                             self.districtTextField.text,
-                             self.provinceTextFiled.text,
-                             self.postCodeTextField.text,
-                             self.telephoneNumberTextField.text,
-                             self.emailTextField.text,
-                             self.usernameTextField.text,
-                             self.passwordTextField.text,
-                             self.emergencyPersonTextField.text,
-                             self.emergencyPersonNumberPhoneTextField.text,
-                             self.hearFromTextField.text,
-                             self.pointHomeTextField.text,
-                             coord.latitude,
-                             coord.longitude];
-    NSLog(@"URL %@",strRequest);
-    NSURL *_url = [NSURL URLWithString:strRequest];
-    NSMutableURLRequest *_request = [NSMutableURLRequest requestWithURL:_url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:50];
-    NSDictionary *_headers = [NSDictionary dictionaryWithObjectsAndKeys:@"application/json", @"accept", nil];
-    [_request setAllHTTPHeaderFields:_headers];
+    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
+                            name , @"name",
+                            age , @"age",
+                            add , @"address",
+                            street , @"street",
+                            subDis , @"subDistrict",
+                            dis , @"district",
+                            prov , @"province",
+                            post , @"postCode",
+                            tel , @"phone",
+                            email , @"email",
+                            user , @"username",
+                            pass , @"password",
+                            emerP , @"emergencyPerson",
+                            emerT , @"emergencyPersonNumberPhone",
+                            hear , @"hearFrom",
+                            point , @"poiHome",
+                            lati, @"latitude",
+                            longti, @"longitude",
+                            nil];
     
-    urlConnection=[[NSURLConnection alloc] initWithRequest:_request delegate:self];
-    [urlConnection start];
-}
-
-
-#pragma mark - Connection delegate
-- (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
-{
-    [jData appendData:data];
-}
-
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
+    AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:
+                            [NSURL URLWithString:piyavateURL]];
     
-}
-
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection{
-        NSMutableArray * dicA = [NSJSONSerialization JSONObjectWithData:jData options:NSJSONReadingMutableContainers error:nil];
-        NSLog(@"Request Webservice %@",dicA);
-        if (dicA[0]) {
-            if ([dicA[0][@"status"] isEqualToString:@"fail"]) {
-                UIAlertView * alertV = [[UIAlertView alloc]initWithTitle:@"สมัครไม่สำเร็จ" message:@"กรุณาตรวจสอบข้อมูล" delegate:self cancelButtonTitle:@"ปิด" otherButtonTitles:nil, nil];
-                [alertV show];
-            }
+    [client postPath:@"register.php" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSMutableArray * array = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        NSLog(@"Respone %@",array);
+        
+        if ([array[0][@"status"] isEqualToString:@"fail"]) {
             [SVProgressHUD dismiss];
+            UIAlertView * alertV = [[UIAlertView alloc]initWithTitle:@"ลงทะเบียนไม่สำเร็จ" message:@"กรุณาตรวจสอบข้อมูล" delegate:self cancelButtonTitle:@"ปิด" otherButtonTitles:nil, nil];
+            [alertV show];
+        }else{
             
         }
-    
-    
+        
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", [error localizedDescription]);
+    }];
 }
+
 
 
 - (IBAction)backButtontapped:(id)sender{

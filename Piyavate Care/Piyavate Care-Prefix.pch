@@ -13,4 +13,9 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "AFNetworking.h"
+    #import "AFHTTPClient.h"
 #endif
+
+#define piyavateURL @"http://piyavatecare.com/home/app/"
+

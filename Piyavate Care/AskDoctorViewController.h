@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AskDoctorViewController : UIViewController<UIScrollViewDelegate,UITextFieldDelegate>
+@interface AskDoctorViewController : UIViewController<UIScrollViewDelegate,UITextFieldDelegate,UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *nameTF;
 @property (weak, nonatomic) IBOutlet UITextField *phoneTF;
 @property (weak, nonatomic) IBOutlet UITextField *emailTF;
