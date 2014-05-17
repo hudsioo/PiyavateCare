@@ -8,6 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		22CA74E21902502900D9DC0D /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CA74E11902502900D9DC0D /* ForgotPasswordViewController.m */; };
+		9F068BA01927ABD00009F5AA /* benefit.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068B9F1927ABD00009F5AA /* benefit.png */; };
+		9F068BA21927AE010009F5AA /* siren_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068BA11927AE010009F5AA /* siren_2.png */; };
+		9F068BA41927AE5A0009F5AA /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068BA31927AE5A0009F5AA /* ic_launcher.png */; };
+		9F068BB31927AF170009F5AA /* home_btn_ask_doctor.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068BA51927AF170009F5AA /* home_btn_ask_doctor.png */; };
+		9F068BB41927AF170009F5AA /* home_btn_elderly_care.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068BA61927AF170009F5AA /* home_btn_elderly_care.png */; };
+		9F068BB51927AF170009F5AA /* home_btn_emergency.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068BA71927AF170009F5AA /* home_btn_emergency.png */; };
+		9F068BB61927AF170009F5AA /* home_btn_health_check.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068BA81927AF170009F5AA /* home_btn_health_check.png */; };
+		9F068BB71927AF170009F5AA /* home_btn_health.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068BA91927AF170009F5AA /* home_btn_health.png */; };
+		9F068BB81927AF170009F5AA /* home_btn_location.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068BAA1927AF170009F5AA /* home_btn_location.png */; };
+		9F068BB91927AF170009F5AA /* home_btn_map.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068BAB1927AF170009F5AA /* home_btn_map.png */; };
+		9F068BBA1927AF170009F5AA /* home_btn_news.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068BAC1927AF170009F5AA /* home_btn_news.png */; };
+		9F068BBB1927AF170009F5AA /* home_btn_package.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068BAD1927AF170009F5AA /* home_btn_package.png */; };
+		9F068BBC1927AF170009F5AA /* home_btn_piyavate.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068BAE1927AF170009F5AA /* home_btn_piyavate.png */; };
+		9F068BBD1927AF170009F5AA /* home_btn_sos.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068BAF1927AF170009F5AA /* home_btn_sos.png */; };
+		9F068BBE1927AF170009F5AA /* home_btn_wellbeing_care.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068BB01927AF170009F5AA /* home_btn_wellbeing_care.png */; };
+		9F068BBF1927AF170009F5AA /* home_btn_woman_care.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068BB11927AF170009F5AA /* home_btn_woman_care.png */; };
+		9F068BC01927AF170009F5AA /* home_btn_working_care.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068BB21927AF170009F5AA /* home_btn_working_care.png */; };
 		9F16212618F6CCA3002512AF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F16212418F6CCA3002512AF /* HomeViewController.m */; };
 		9F16212718F6CCA3002512AF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F16212518F6CCA3002512AF /* HomeViewController.xib */; };
 		9F16213918F6CD68002512AF /* background_pink.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F16212918F6CD68002512AF /* background_pink.png */; };
@@ -82,6 +99,23 @@
 /* Begin PBXFileReference section */
 		22CA74E01902502900D9DC0D /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
 		22CA74E11902502900D9DC0D /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
+		9F068B9F1927ABD00009F5AA /* benefit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = benefit.png; sourceTree = "<group>"; };
+		9F068BA11927AE010009F5AA /* siren_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = siren_2.png; sourceTree = "<group>"; };
+		9F068BA31927AE5A0009F5AA /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		9F068BA51927AF170009F5AA /* home_btn_ask_doctor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_btn_ask_doctor.png; sourceTree = "<group>"; };
+		9F068BA61927AF170009F5AA /* home_btn_elderly_care.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_btn_elderly_care.png; sourceTree = "<group>"; };
+		9F068BA71927AF170009F5AA /* home_btn_emergency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_btn_emergency.png; sourceTree = "<group>"; };
+		9F068BA81927AF170009F5AA /* home_btn_health_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_btn_health_check.png; sourceTree = "<group>"; };
+		9F068BA91927AF170009F5AA /* home_btn_health.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_btn_health.png; sourceTree = "<group>"; };
+		9F068BAA1927AF170009F5AA /* home_btn_location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_btn_location.png; sourceTree = "<group>"; };
+		9F068BAB1927AF170009F5AA /* home_btn_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_btn_map.png; sourceTree = "<group>"; };
+		9F068BAC1927AF170009F5AA /* home_btn_news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_btn_news.png; sourceTree = "<group>"; };
+		9F068BAD1927AF170009F5AA /* home_btn_package.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_btn_package.png; sourceTree = "<group>"; };
+		9F068BAE1927AF170009F5AA /* home_btn_piyavate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_btn_piyavate.png; sourceTree = "<group>"; };
+		9F068BAF1927AF170009F5AA /* home_btn_sos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_btn_sos.png; sourceTree = "<group>"; };
+		9F068BB01927AF170009F5AA /* home_btn_wellbeing_care.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_btn_wellbeing_care.png; sourceTree = "<group>"; };
+		9F068BB11927AF170009F5AA /* home_btn_woman_care.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_btn_woman_care.png; sourceTree = "<group>"; };
+		9F068BB21927AF170009F5AA /* home_btn_working_care.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_btn_working_care.png; sourceTree = "<group>"; };
 		9F16212318F6CCA3002512AF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		9F16212418F6CCA3002512AF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		9F16212518F6CCA3002512AF /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -210,6 +244,20 @@
 				9F16212318F6CCA3002512AF /* HomeViewController.h */,
 				9F16212418F6CCA3002512AF /* HomeViewController.m */,
 				9F16212518F6CCA3002512AF /* HomeViewController.xib */,
+				9F068BA51927AF170009F5AA /* home_btn_ask_doctor.png */,
+				9F068BA61927AF170009F5AA /* home_btn_elderly_care.png */,
+				9F068BA71927AF170009F5AA /* home_btn_emergency.png */,
+				9F068BA81927AF170009F5AA /* home_btn_health_check.png */,
+				9F068BA91927AF170009F5AA /* home_btn_health.png */,
+				9F068BAA1927AF170009F5AA /* home_btn_location.png */,
+				9F068BAB1927AF170009F5AA /* home_btn_map.png */,
+				9F068BAC1927AF170009F5AA /* home_btn_news.png */,
+				9F068BAD1927AF170009F5AA /* home_btn_package.png */,
+				9F068BAE1927AF170009F5AA /* home_btn_piyavate.png */,
+				9F068BAF1927AF170009F5AA /* home_btn_sos.png */,
+				9F068BB01927AF170009F5AA /* home_btn_wellbeing_care.png */,
+				9F068BB11927AF170009F5AA /* home_btn_woman_care.png */,
+				9F068BB21927AF170009F5AA /* home_btn_working_care.png */,
 				9FBD68FE1900E48D00C9CFD5 /* HealthCheck */,
 				9FBD68F71900E43B00C9CFD5 /* AskDoc */,
 				9FBD68F81900E44500C9CFD5 /* WebView */,
@@ -321,6 +369,9 @@
 				9FCEBBD518E48A2E00D868E0 /* AppDelegate.h */,
 				9FCEBBD618E48A2E00D868E0 /* AppDelegate.m */,
 				9FCEBBD818E48A2E00D868E0 /* Main.storyboard */,
+				9F068B9F1927ABD00009F5AA /* benefit.png */,
+				9F068BA11927AE010009F5AA /* siren_2.png */,
+				9F068BA31927AE5A0009F5AA /* ic_launcher.png */,
 				9FE0469918E9223C00AB2A40 /* SignIn */,
 				22CA74DF19024FFE00D9DC0D /* ForgotPassword */,
 				9FE0469F18E9F9CB00AB2A40 /* SignUp */,
@@ -492,29 +543,46 @@
 			files = (
 				9FCEBBDF18E48A2E00D868E0 /* Images.xcassets in Resources */,
 				9F16213A18F6CD68002512AF /* background.png in Resources */,
+				9F068BB41927AF170009F5AA /* home_btn_elderly_care.png in Resources */,
 				9F16213918F6CD68002512AF /* background_pink.png in Resources */,
 				9FFD608018F79A6600F5C671 /* WebViewController.xib in Resources */,
+				9F068BBB1927AF170009F5AA /* home_btn_package.png in Resources */,
 				9FE0469418E9212A00AB2A40 /* SVProgressHUD.bundle in Resources */,
 				9F16213B18F6CD68002512AF /* default.png in Resources */,
+				9F068BBD1927AF170009F5AA /* home_btn_sos.png in Resources */,
 				9F16214518F6CD68002512AF /* icon9.png in Resources */,
 				9FBD69001900E54200C9CFD5 /* BMIicon.png in Resources */,
 				9F16213E18F6CD68002512AF /* icon2.png in Resources */,
+				9F068BB51927AF170009F5AA /* home_btn_emergency.png in Resources */,
 				9FCEBBD118E48A2E00D868E0 /* InfoPlist.strings in Resources */,
+				9F068BBE1927AF170009F5AA /* home_btn_wellbeing_care.png in Resources */,
+				9F068BB31927AF170009F5AA /* home_btn_ask_doctor.png in Resources */,
 				9FCEBBFC18E48CDA00D868E0 /* bg.png in Resources */,
 				9F16213C18F6CD68002512AF /* emergency.png in Resources */,
+				9F068BB71927AF170009F5AA /* home_btn_health.png in Resources */,
 				9F16214418F6CD68002512AF /* icon8.png in Resources */,
 				9F16214118F6CD68002512AF /* icon5.png in Resources */,
 				9F16214018F6CD68002512AF /* icon4.png in Resources */,
 				9FCEBBDA18E48A2E00D868E0 /* Main.storyboard in Resources */,
 				9F16214718F6CD68002512AF /* icon11.png in Resources */,
+				9F068BBC1927AF170009F5AA /* home_btn_piyavate.png in Resources */,
 				9F16214318F6CD68002512AF /* icon7.png in Resources */,
+				9F068BC01927AF170009F5AA /* home_btn_working_care.png in Resources */,
 				9FFD607B18F795DB00F5C671 /* AskDoctorViewController.xib in Resources */,
+				9F068BA41927AE5A0009F5AA /* ic_launcher.png in Resources */,
+				9F068BB81927AF170009F5AA /* home_btn_location.png in Resources */,
 				9F16214818F6CD68002512AF /* icon12.png in Resources */,
+				9F068BB61927AF170009F5AA /* home_btn_health_check.png in Resources */,
 				9FBD69051900E5E900C9CFD5 /* BMICalculatorViewController.xib in Resources */,
+				9F068BBF1927AF170009F5AA /* home_btn_woman_care.png in Resources */,
+				9F068BBA1927AF170009F5AA /* home_btn_news.png in Resources */,
 				9FCEBBFE18E499FF00D868E0 /* bg@2x.png in Resources */,
 				9F16212718F6CCA3002512AF /* HomeViewController.xib in Resources */,
+				9F068BA21927AE010009F5AA /* siren_2.png in Resources */,
+				9F068BA01927ABD00009F5AA /* benefit.png in Resources */,
 				9F16213D18F6CD68002512AF /* icon1.png in Resources */,
 				9F16214618F6CD68002512AF /* icon10.png in Resources */,
+				9F068BB91927AF170009F5AA /* home_btn_map.png in Resources */,
 				9F16213F18F6CD68002512AF /* icon3.png in Resources */,
 				9F16214218F6CD68002512AF /* icon6.png in Resources */,
 			);

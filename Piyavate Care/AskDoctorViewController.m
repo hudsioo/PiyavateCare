@@ -8,6 +8,8 @@
 
 #import "AskDoctorViewController.h"
 #import "SVProgressHUD.h"
+#import "AFNetworking.h"
+#import "AFHTTPClient.h"
 @interface AskDoctorViewController (){
     NSMutableData * jData;
 }
@@ -38,6 +40,7 @@
 //    userID, doctorID, name, email, phone,
     NSUserDefaults * UD = [NSUserDefaults standardUserDefaults];
     NSString * userID = [[UD objectForKey:@"userInfo"] objectForKey:@"userID"];
+    NSLog(@"%@ user",userID);
     NSString * doctorID = @"";
     NSString * name = [self.nameTF.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSString * email = [self.emailTF.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
@@ -60,7 +63,7 @@
         
         if ([array[0][@"status"] isEqualToString:@"fail"]) {
             [SVProgressHUD dismiss];
-            UIAlertView * alertV = [[UIAlertView alloc]initWithTitle:@"เข้าสู่ระบบไม่สำเร็จ" message:@"รหัสผู้ใช้ หรือ รหัสผ่านไม่ถูกต้อง" delegate:self cancelButtonTitle:@"ปิด" otherButtonTitles:nil, nil];
+            UIAlertView * alertV = [[UIAlertView alloc]initWithTitle:@"ไม่สามารถดำเนินการได้" message:@"ระบบไม่สามารถส่งข้อมูลได้" delegate:self cancelButtonTitle:@"ปิด" otherButtonTitles:nil, nil];
             [alertV show];
         }else{
            
@@ -84,6 +87,11 @@
 {
     [super viewDidLoad];
     self.scrollView.contentSize = CGSizeMake(320, 800);
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    NSLog(@"xxxx");
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning

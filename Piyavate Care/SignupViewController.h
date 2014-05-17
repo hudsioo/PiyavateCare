@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-@interface SignupViewController : UIViewController<UIScrollViewDelegate,CLLocationManagerDelegate>{
+@interface SignupViewController : UIViewController<UIScrollViewDelegate,CLLocationManagerDelegate,UITextFieldDelegate>{
     
      CLLocationManager *locationManager;
 }

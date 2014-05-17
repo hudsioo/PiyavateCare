@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -18,10 +18,14 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rw6-kJ-KM8">
-                    <rect key="frame" x="20" y="100" width="87" height="58"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_launcher.png" id="KhT-bS-ikJ">
+                    <rect key="frame" x="20" y="22" width="42" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rw6-kJ-KM8">
+                    <rect key="frame" x="34" y="100" width="58" height="58"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="icon1.png">
+                    <state key="normal" image="home_btn_health.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -29,9 +33,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ws6-gk-nV5">
-                    <rect key="frame" x="117" y="100" width="87" height="58"/>
+                    <rect key="frame" x="131" y="100" width="58" height="58"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="icon2.png">
+                    <state key="normal" image="home_btn_ask_doctor.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -39,9 +43,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qac-5b-KDq">
-                    <rect key="frame" x="213" y="100" width="87" height="58"/>
+                    <rect key="frame" x="227" y="100" width="58" height="58"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="icon3.png">
+                    <state key="normal" image="home_btn_health_check.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -49,9 +53,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Ir-mO-D8A">
-                    <rect key="frame" x="20" y="182" width="87" height="58"/>
+                    <rect key="frame" x="34" y="182" width="59" height="58"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="icon4.png">
+                    <state key="normal" image="home_btn_working_care.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -59,9 +63,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QCe-tY-3vo">
-                    <rect key="frame" x="117" y="182" width="87" height="58"/>
+                    <rect key="frame" x="131" y="182" width="58" height="58"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="icon5.png">
+                    <state key="normal" image="home_btn_elderly_care.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -69,9 +73,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aiw-UA-3jE">
-                    <rect key="frame" x="213" y="182" width="87" height="58"/>
+                    <rect key="frame" x="227" y="182" width="58" height="58"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="icon6.png">
+                    <state key="normal" image="home_btn_woman_care.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -79,9 +83,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bOx-SK-ZKW">
-                    <rect key="frame" x="20" y="267" width="87" height="58"/>
+                    <rect key="frame" x="34" y="267" width="58" height="58"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="icon7.png">
+                    <state key="normal" image="home_btn_working_care.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -89,9 +93,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="drw-RY-daR">
-                    <rect key="frame" x="117" y="267" width="87" height="58"/>
+                    <rect key="frame" x="131" y="267" width="58" height="58"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="icon8.png">
+                    <state key="normal" image="home_btn_package.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -99,9 +103,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="w2z-9T-dYs">
-                    <rect key="frame" x="213" y="267" width="87" height="58"/>
+                    <rect key="frame" x="227" y="267" width="58" height="58"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="icon9.png">
+                    <state key="normal" image="home_btn_news.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -109,9 +113,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dY1-d5-xql">
-                    <rect key="frame" x="20" y="352" width="87" height="58"/>
+                    <rect key="frame" x="34" y="352" width="58" height="58"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="icon10.png">
+                    <state key="normal" image="home_btn_map.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -119,9 +123,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DpI-zg-eXW">
-                    <rect key="frame" x="117" y="352" width="87" height="58"/>
+                    <rect key="frame" x="131" y="352" width="58" height="58"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="icon11.png">
+                    <state key="normal" image="home_btn_sos.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -129,9 +133,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iKz-g0-pCU">
-                    <rect key="frame" x="213" y="352" width="87" height="58"/>
+                    <rect key="frame" x="227" y="352" width="58" height="58"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="icon12.png">
+                    <state key="normal" image="home_btn_location.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -139,9 +143,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RjW-DN-G50">
-                    <rect key="frame" x="75" y="503" width="171" height="45"/>
+                    <rect key="frame" x="71" y="506" width="178" height="42"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <state key="normal" image="emergency.png">
+                    <state key="normal" image="home_btn_emergency.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -163,18 +167,18 @@
     </objects>
     <resources>
         <image name="bg.png" width="320" height="568"/>
-        <image name="emergency.png" width="434" height="118"/>
-        <image name="icon1.png" width="276" height="184"/>
-        <image name="icon10.png" width="276" height="182"/>
-        <image name="icon11.png" width="276" height="182"/>
-        <image name="icon12.png" width="276" height="182"/>
-        <image name="icon2.png" width="276" height="182"/>
-        <image name="icon3.png" width="276" height="182"/>
-        <image name="icon4.png" width="276" height="182"/>
-        <image name="icon5.png" width="276" height="184"/>
-        <image name="icon6.png" width="276" height="182"/>
-        <image name="icon7.png" width="277" height="182"/>
-        <image name="icon8.png" width="276" height="182"/>
-        <image name="icon9.png" width="276" height="184"/>
+        <image name="home_btn_ask_doctor.png" width="158" height="158"/>
+        <image name="home_btn_elderly_care.png" width="159" height="154"/>
+        <image name="home_btn_emergency.png" width="436" height="103"/>
+        <image name="home_btn_health.png" width="156" height="155"/>
+        <image name="home_btn_health_check.png" width="158" height="155"/>
+        <image name="home_btn_location.png" width="158" height="158"/>
+        <image name="home_btn_map.png" width="160" height="155"/>
+        <image name="home_btn_news.png" width="158" height="155"/>
+        <image name="home_btn_package.png" width="158" height="156"/>
+        <image name="home_btn_sos.png" width="158" height="155"/>
+        <image name="home_btn_woman_care.png" width="157" height="156"/>
+        <image name="home_btn_working_care.png" width="156" height="155"/>
+        <image name="ic_launcher.png" width="144" height="144"/>
     </resources>
 </document>

@@ -126,7 +126,11 @@
     }];
 }
 
-
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    NSLog(@"xxxx");
+    [textField resignFirstResponder];
+    return YES;
+}
 
 - (IBAction)backButtontapped:(id)sender{
     [self dismissViewControllerAnimated:YES completion:nil];
