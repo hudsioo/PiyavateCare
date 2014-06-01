@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22ADA6F51927CB3600591D61 /* HealthCheckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FBD68FB1900E48900C9CFD5 /* HealthCheckViewController.xib */; };
 		22CA74E21902502900D9DC0D /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CA74E11902502900D9DC0D /* ForgotPasswordViewController.m */; };
 		9F068BA01927ABD00009F5AA /* benefit.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068B9F1927ABD00009F5AA /* benefit.png */; };
 		9F068BA21927AE010009F5AA /* siren_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F068BA11927AE010009F5AA /* siren_2.png */; };
@@ -512,6 +513,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = QOOFHOUSE;
 				TargetAttributes = {
+					9FCEBBC218E48A2E00D868E0 = {
+						DevelopmentTeam = Z8A8UMYRZ6;
+					};
 					9FCEBBE318E48A2E00D868E0 = {
 						TestTargetID = 9FCEBBC218E48A2E00D868E0;
 					};
@@ -541,6 +545,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22ADA6F51927CB3600591D61 /* HealthCheckViewController.xib in Resources */,
 				9FCEBBDF18E48A2E00D868E0 /* Images.xcassets in Resources */,
 				9F16213A18F6CD68002512AF /* background.png in Resources */,
 				9F068BB41927AF170009F5AA /* home_btn_elderly_care.png in Resources */,
@@ -688,7 +693,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sommart Sukmanee (Z8A8UMYRZ6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sommart Sukmanee (Z8A8UMYRZ6)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -706,6 +712,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "CB81A80A-DFF3-4337-8B25-98B686CCBE03";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -726,7 +733,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sommart Sukmanee (Z8A8UMYRZ6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sommart Sukmanee (Z8A8UMYRZ6)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -737,6 +745,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "CB81A80A-DFF3-4337-8B25-98B686CCBE03";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -747,10 +756,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Piyavate Care/Piyavate Care-Prefix.pch";
 				INFOPLIST_FILE = "Piyavate Care/Piyavate Care-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -760,10 +772,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Piyavate Care/Piyavate Care-Prefix.pch";
 				INFOPLIST_FILE = "Piyavate Care/Piyavate Care-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

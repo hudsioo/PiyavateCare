@@ -110,7 +110,7 @@
 }
 
 - (IBAction)openPiyavateLocation:(id)sender {
-    WebViewController * webVC = [[WebViewController alloc] initWithURL:@"http://www.piyavatecare.com/home/contact" andTitle:@"Piyavate"];
+    WebViewController * webVC = [[WebViewController alloc] initWithURL:@"http://www.piyavatecare.com/home/contact" andTitle:@"Piyavate Care"];
     UINavigationController * nv = [[UINavigationController alloc] initWithRootViewController:webVC];
     [self presentViewController:nv animated:YES completion:nil];
 }

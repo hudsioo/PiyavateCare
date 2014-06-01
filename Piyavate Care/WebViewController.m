@@ -44,7 +44,7 @@
 {
     [super viewDidLoad];
     
-    UIBarButtonItem * closeBtn = [[UIBarButtonItem alloc] initWithTitle:@"Close" style:UIBarButtonItemStylePlain target:self action:@selector(closeAction)];
+    UIBarButtonItem * closeBtn = [[UIBarButtonItem alloc] initWithTitle:@"ปิด" style:UIBarButtonItemStylePlain target:self action:@selector(closeAction)];
     self.navigationItem.leftBarButtonItem = closeBtn;
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     
