@@ -11,6 +11,7 @@
 #import "AskDoctorViewController.h"
 #import "WebViewController.h"
 #import "HealthCheckViewController.h"
+#import "GetHealthViewController.h"
 @interface HomeViewController ()
 
 @end
@@ -49,6 +50,8 @@
 }
 
 - (IBAction)openGetHealth:(id)sender {
+    GetHealthViewController * getHVC = [[GetHealthViewController alloc] initWithNibName:@"GetHealthViewController" bundle:nil];
+    [self presentViewController:getHVC animated:YES completion:nil];
 }
 
 - (IBAction)openAskDoctor:(id)sender {

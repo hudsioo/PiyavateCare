@@ -59,6 +59,8 @@
 		9FBD69001900E54200C9CFD5 /* BMIicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FBD68FF1900E54200C9CFD5 /* BMIicon.png */; };
 		9FBD69041900E5E900C9CFD5 /* BMICalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD69021900E5E900C9CFD5 /* BMICalculatorViewController.m */; };
 		9FBD69051900E5E900C9CFD5 /* BMICalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FBD69031900E5E900C9CFD5 /* BMICalculatorViewController.xib */; };
+		9FC800EA193CA477008DE04C /* GetHealthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC800E8193CA477008DE04C /* GetHealthViewController.m */; };
+		9FC800EB193CA477008DE04C /* GetHealthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FC800E9193CA477008DE04C /* GetHealthViewController.xib */; };
 		9FCEBBC718E48A2E00D868E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEBBC618E48A2E00D868E0 /* Foundation.framework */; };
 		9FCEBBC918E48A2E00D868E0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEBBC818E48A2E00D868E0 /* CoreGraphics.framework */; };
 		9FCEBBCB18E48A2E00D868E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCEBBCA18E48A2E00D868E0 /* UIKit.framework */; };
@@ -164,6 +166,9 @@
 		9FBD69011900E5E900C9CFD5 /* BMICalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMICalculatorViewController.h; sourceTree = "<group>"; };
 		9FBD69021900E5E900C9CFD5 /* BMICalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMICalculatorViewController.m; sourceTree = "<group>"; };
 		9FBD69031900E5E900C9CFD5 /* BMICalculatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMICalculatorViewController.xib; sourceTree = "<group>"; };
+		9FC800E7193CA477008DE04C /* GetHealthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetHealthViewController.h; sourceTree = SOURCE_ROOT; };
+		9FC800E8193CA477008DE04C /* GetHealthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetHealthViewController.m; sourceTree = SOURCE_ROOT; };
+		9FC800E9193CA477008DE04C /* GetHealthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GetHealthViewController.xib; sourceTree = SOURCE_ROOT; };
 		9FCEBBC318E48A2E00D868E0 /* Piyavate Care.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Piyavate Care.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCEBBC618E48A2E00D868E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9FCEBBC818E48A2E00D868E0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -245,20 +250,8 @@
 				9F16212318F6CCA3002512AF /* HomeViewController.h */,
 				9F16212418F6CCA3002512AF /* HomeViewController.m */,
 				9F16212518F6CCA3002512AF /* HomeViewController.xib */,
-				9F068BA51927AF170009F5AA /* home_btn_ask_doctor.png */,
-				9F068BA61927AF170009F5AA /* home_btn_elderly_care.png */,
-				9F068BA71927AF170009F5AA /* home_btn_emergency.png */,
-				9F068BA81927AF170009F5AA /* home_btn_health_check.png */,
-				9F068BA91927AF170009F5AA /* home_btn_health.png */,
-				9F068BAA1927AF170009F5AA /* home_btn_location.png */,
-				9F068BAB1927AF170009F5AA /* home_btn_map.png */,
-				9F068BAC1927AF170009F5AA /* home_btn_news.png */,
-				9F068BAD1927AF170009F5AA /* home_btn_package.png */,
-				9F068BAE1927AF170009F5AA /* home_btn_piyavate.png */,
-				9F068BAF1927AF170009F5AA /* home_btn_sos.png */,
-				9F068BB01927AF170009F5AA /* home_btn_wellbeing_care.png */,
-				9F068BB11927AF170009F5AA /* home_btn_woman_care.png */,
-				9F068BB21927AF170009F5AA /* home_btn_working_care.png */,
+				9FC800EC193CA47D008DE04C /* GetHealth */,
+				9FC800E6193CA437008DE04C /* iconsmenu */,
 				9FBD68FE1900E48D00C9CFD5 /* HealthCheck */,
 				9FBD68F71900E43B00C9CFD5 /* AskDoc */,
 				9FBD68F81900E44500C9CFD5 /* WebView */,
@@ -325,6 +318,37 @@
 				9FBD69031900E5E900C9CFD5 /* BMICalculatorViewController.xib */,
 			);
 			name = HealthCheck;
+			sourceTree = "<group>";
+		};
+		9FC800E6193CA437008DE04C /* iconsmenu */ = {
+			isa = PBXGroup;
+			children = (
+				9F068BA51927AF170009F5AA /* home_btn_ask_doctor.png */,
+				9F068BA61927AF170009F5AA /* home_btn_elderly_care.png */,
+				9F068BA71927AF170009F5AA /* home_btn_emergency.png */,
+				9F068BA81927AF170009F5AA /* home_btn_health_check.png */,
+				9F068BA91927AF170009F5AA /* home_btn_health.png */,
+				9F068BAA1927AF170009F5AA /* home_btn_location.png */,
+				9F068BAB1927AF170009F5AA /* home_btn_map.png */,
+				9F068BAC1927AF170009F5AA /* home_btn_news.png */,
+				9F068BAD1927AF170009F5AA /* home_btn_package.png */,
+				9F068BAE1927AF170009F5AA /* home_btn_piyavate.png */,
+				9F068BAF1927AF170009F5AA /* home_btn_sos.png */,
+				9F068BB01927AF170009F5AA /* home_btn_wellbeing_care.png */,
+				9F068BB11927AF170009F5AA /* home_btn_woman_care.png */,
+				9F068BB21927AF170009F5AA /* home_btn_working_care.png */,
+			);
+			name = iconsmenu;
+			sourceTree = "<group>";
+		};
+		9FC800EC193CA47D008DE04C /* GetHealth */ = {
+			isa = PBXGroup;
+			children = (
+				9FC800E7193CA477008DE04C /* GetHealthViewController.h */,
+				9FC800E8193CA477008DE04C /* GetHealthViewController.m */,
+				9FC800E9193CA477008DE04C /* GetHealthViewController.xib */,
+			);
+			name = GetHealth;
 			sourceTree = "<group>";
 		};
 		9FCEBBBA18E48A2E00D868E0 = {
@@ -576,6 +600,7 @@
 				9FFD607B18F795DB00F5C671 /* AskDoctorViewController.xib in Resources */,
 				9F068BA41927AE5A0009F5AA /* ic_launcher.png in Resources */,
 				9F068BB81927AF170009F5AA /* home_btn_location.png in Resources */,
+				9FC800EB193CA477008DE04C /* GetHealthViewController.xib in Resources */,
 				9F16214818F6CD68002512AF /* icon12.png in Resources */,
 				9F068BB61927AF170009F5AA /* home_btn_health_check.png in Resources */,
 				9FBD69051900E5E900C9CFD5 /* BMICalculatorViewController.xib in Resources */,
@@ -614,6 +639,7 @@
 				9FFD607A18F795DB00F5C671 /* AskDoctorViewController.m in Sources */,
 				9F3AABF9190F9BE30067A357 /* AFURLConnectionOperation.m in Sources */,
 				9F3AABF7190F9BE30067A357 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				9FC800EA193CA477008DE04C /* GetHealthViewController.m in Sources */,
 				9FBD68FC1900E48900C9CFD5 /* HealthCheckViewController.m in Sources */,
 				9FE0469318E9212A00AB2A40 /* SVProgressHUD.m in Sources */,
 				9F3AABF8190F9BE30067A357 /* AFPropertyListRequestOperation.m in Sources */,

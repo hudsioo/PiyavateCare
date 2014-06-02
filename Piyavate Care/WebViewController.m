@@ -48,7 +48,7 @@
     self.navigationItem.leftBarButtonItem = closeBtn;
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     
-    if ([self.title isEqualToString:@"Piyavate"]) {
+    if ([self.title isEqualToString:@"Piyavate Care"]) {
         UIBarButtonItem * mapBtn = [[UIBarButtonItem alloc] initWithTitle:@"นำทาง" style:UIBarButtonItemStylePlain target:self action:@selector(openMap)];
         self.navigationItem.rightBarButtonItem = mapBtn;
     }
